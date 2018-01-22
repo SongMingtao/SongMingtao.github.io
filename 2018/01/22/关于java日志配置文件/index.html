@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>John Cash</title>
+  <title>关于java日志配置文件 | John Cash</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="wan to change the world">
-<meta property="og:type" content="website">
-<meta property="og:title" content="John Cash">
-<meta property="og:url" content="http://johncash.com/index.html">
+  <meta name="description" content="################################################################################ #①配置根Logger，其语法为： # #log4j.rootLogger = [level],appenderName,appenderName2,… #level是日志记录的优先级，分为OFF,TRACE,DEBUG,INFO,WAR">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于java日志配置文件">
+<meta property="og:url" content="http://johncash.com/2018/01/22/关于java日志配置文件/index.html">
 <meta property="og:site_name" content="John Cash">
-<meta property="og:description" content="wan to change the world">
+<meta property="og:description" content="################################################################################ #①配置根Logger，其语法为： # #log4j.rootLogger = [level],appenderName,appenderName2,… #level是日志记录的优先级，分为OFF,TRACE,DEBUG,INFO,WAR">
+<meta property="og:updated_time" content="2018-01-22T13:37:05.156Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="John Cash">
-<meta name="twitter:description" content="wan to change the world">
+<meta name="twitter:title" content="关于java日志配置文件">
+<meta name="twitter:description" content="################################################################################ #①配置根Logger，其语法为： # #log4j.rootLogger = [level],appenderName,appenderName2,… #level是日志记录的优先级，分为OFF,TRACE,DEBUG,INFO,WAR">
   
     <link rel="alternate" href="/atom.xml" title="John Cash" type="application/atom+xml">
   
@@ -66,9 +67,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-关于java日志配置文件" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-关于java日志配置文件" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/01/22/关于java日志配置文件/" class="article-date">
   <time datetime="2018-01-22T13:36:28.000Z" itemprop="datePublished">2018-01-22</time>
@@ -81,8 +80,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/22/关于java日志配置文件/">关于java日志配置文件</a>
+    <h1 class="article-title" itemprop="name">
+      关于java日志配置文件
     </h1>
   
 
@@ -167,137 +166,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-keras入门-一" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/12/17/keras入门-一/" class="article-date">
-  <time datetime="2017-12-17T12:22:24.000Z" itemprop="datePublished">2017-12-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/17/keras入门-一/">keras入门(一)</a>
-    </h1>
+    <a href="/2017/12/17/keras入门-一/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">keras入门(一)</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>待更新</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://johncash.com/2017/12/17/keras入门-一/" data-id="cjcq9c6s70002lmckz7mtzucn" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-javaweb-servlet" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/13/javaweb-servlet/" class="article-date">
-  <time datetime="2017-07-13T13:55:11.000Z" itemprop="datePublished">2017-07-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/13/javaweb-servlet/">javaweb-servlet</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#javaweb-servlet相关</p>
-<p>###在进行服务器端传递response的数据时<br>  要指定浏览器的解析网页的编码方式<br>  “””<br>    response.setContentType(“text/html;charset=”UTF-8”);<br>  “””<br>  或者<br>  “”“<br>    response.setCharcterEncoding(“UTF-8”);<br>  ”“”<br>  指定客户端解析网页的编码方式，但是此种方式无法适应动态的变化，即是<br>  由于浏览器的编码方式不固定。综上，推荐第一种方式，它告诉客户端我使<br>  用什么类型的编码，客户端可以自行适应。</p>
-<p>  ###关于setContentType设置上时，注意事项<br>  “”“<br>    request.setCharacterEncoding(“UTF-8”);<br>        response.setCharacterEncoding(“UTF8”);<br>        response.setContentType(“text/html; charset=UTF-8”);</p>
-<pre><code>PrintWriter out = response.getWriter();
-</code></pre><p>  ”“”<br>     实践发现 out的声明必须在 设置编码之后，要不然仍然会出现乱码的问题，<br>     可能是因为设置属性必须在实例化之前。</p>
-<h3 id="能用接口就不要用具体实现的类"><a href="#能用接口就不要用具体实现的类" class="headerlink" title="能用接口就不要用具体实现的类"></a>能用接口就不要用具体实现的类</h3><p>  why? 修改的话   多态</p>
-<h3 id="DriverManager-registerDriver-在注册的时候"><a href="#DriverManager-registerDriver-在注册的时候" class="headerlink" title="DriverManager.registerDriver() 在注册的时候"></a>DriverManager.registerDriver() 在注册的时候</h3><p>  它注册了2次 另外它强烈的以来jar包 不建议使用<br>  建议:将<br>    DriverManager.registerDriver(new com.mysql.jdbc.Driver());<br>替换成:<br>    反射机制 ？？<br>    Class.forName(“com.mysql.jdbc.Driver”);</p>
-<p>  ###什么是连接池<br>  连接池负责分配管理和释放数据库的链接， 调高数据库的使用性能</p>
-<h3 id="Junit"><a href="#Junit" class="headerlink" title="Junit"></a>Junit</h3><p>  测试的方法 不能有返回值 不能有参数</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://johncash.com/2017/07/13/javaweb-servlet/" data-id="cjcq9c6s90003lmck824h09lu" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/07/hello-world/" class="article-date">
-  <time datetime="2017-07-07T15:48:06.467Z" itemprop="datePublished">2017-07-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/07/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://johncash.com/2017/07/07/hello-world/" data-id="cjcq9c6rw0000lmck0px0ug24" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
